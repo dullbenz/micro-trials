@@ -1,14 +1,146 @@
 #welcome-section {
+    padding-top: 65px;
     height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #303841;
+    color: rgb(230, 216, 218);
+}
+
+h3 {
+    margin: 0;
+}
+
+#welcome-section h1 {
+    font-size: 52px;
+    margin-bottom: 0;
+}
+
+#welcome-section h3 {
+    margin-top: 0;
+    font-size: 30px;
+    color: #BE3144;
+    font-style: italic;
+    font-weight: 200;
+}
+* {
+    box-sizing: border-box;
 }
 
 #navbar {
+    width: 100%;
+    height: 65px;
     position: fixed;
+    padding-right: 15px;
     top: 0;
+    background-color: rgb(179, 18, 34);
+
+    display: flex;
+    flex-direction: row-reverse;
 }
 
-@media only screen and (max-width: 768px) {
+a {
+    text-decoration: none;
+    display: block;
+}
+
+#navbar a {
+    height: 100%;
+    color: rgb(230, 216, 218);
+    font-size: 24px;
+    line-height: 100%;
+    padding: 17px 15px;
+}
+
+#navbar a:hover {
+    background-color: rgb(38, 10, 66);
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#projects {
+    background-color: #45567d;
+}
+
+#projects h3{
+    text-align: center;
+    color: rgb(230, 216, 218);
+    font-size: 40px;
+
+    margin: auto;
+    padding-top: 90px;
+    margin-bottom: 60px;
+    border-bottom: 1px solid rgb(230, 216, 218);
+    width: fit-content;
+}
+
+.project-tile a{
+    /* width: 200px; */
+    height: auto;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.tile-container {
+    padding-left: 45px;
+    padding-right: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 45px;
+    padding-bottom: 100px;
+}
+
+.project-tile {
+    flex: 1 0 30%;
+
+}
+
+#contacts {
+    background-color: #303841;
+    color: rgb(230, 216, 218);
+    font-size: 48px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+}
+
+#contacts-container {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 30px;
+}
+
+#contacts-container a {
+    color: rgb(230, 216, 218);
+}
+
+#contacts-container a:hover {
+    transform: translateY(8px);
+    transition: all 0.2s linear;
+}
+
+@media only screen and (max-width: 600px) {
     /* #navbar {
         max-width: 400px;
     } */
+    .project-tile {
+        flex: 1 0 80%;
+    }
 }
