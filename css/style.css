@@ -1,0 +1,15 @@
+#welcome-section {
+    padding-top: 500px;
+    padding-bottom: 500px;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    /* #navbar {
+        max-width: 400px;
+    } */
+}
